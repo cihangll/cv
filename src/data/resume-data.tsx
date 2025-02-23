@@ -1,23 +1,4 @@
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-} from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Cihan Güllü",
@@ -25,11 +6,11 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Gebze+Kocaeli",
   about: "Full Stack Developer",
   summary:
-    "I am a fullstack developer with 6 years of experience. I started my career with C# and .NET Core. Then, I gained experience in web services, background services and similar subjects. Afterwards, I experienced in popular frameworks like Blazor, React.js and Next.js. I am currently continuing to work as a full stack developer. When I have time, I try to improve myself in DDD and microservices.",
+    "I am a fullstack developer with 7 years of experience. I started my career with C# and .NET Core. Then, I gained experience in web services, background services and similar subjects. Afterwards, I experienced in popular frameworks like Blazor, React.js and Next.js. I am currently continuing to work as a full stack developer. When I have time, I try to improve myself in DDD and microservices.",
   personalWebsiteUrl: "https://github.com/cihangll",
   contact: {
     email: "cihangullu54@gmail.com",
-    tel: "+905435803834",
+    tel: "+90 543 580 38 34",
     social: [
       {
         name: "GitHub",
@@ -56,11 +37,21 @@ export const RESUME_DATA = {
       company: "BilgeAdam Technology",
       link: "https://www.bilgeadam.com/",
       badges: ["Remote"],
-      title: "Senior FullStack Developer",
-      start: "2022",
+      title: "Senior FullStack Java Developer",
+      start: "2024",
       end: null,
       description:
-        "Develop the kariyer.garantibbva.com.tr application and be part of the HCM project infrastructure in Next.js project. Technologies: .NET Core, EF Core, MSSQL, ReactJs, NextJs, Redux, Redis, RabbitMQ, Docker ",
+        "I am currently developing the workflow project with spring boot. Technologies: JAVA, Spring Boot, Apache Kafka, Redis, PostgreSQL, ReactJs, NextJs, Docker ",
+    },
+    {
+      company: "BilgeAdam Technology",
+      link: "https://www.bilgeadam.com/",
+      badges: ["Remote"],
+      title: "Senior FullStack Dotnet Developer",
+      start: "2022",
+      end: "2024",
+      description:
+        "Develop the kariyer.garantibbva.com.tr application and be part of the HCM project infrastructure in Next.js project. Technologies: C#, .NET Core, EF Core, MSSQL, ReactJs, NextJs, Redux, Redis, RabbitMQ, Docker ",
     },
     {
       company: "Arge Bilisim",
@@ -112,8 +103,65 @@ export const RESUME_DATA = {
     "Hangfire",
     "Devexpress",
     "Dapper",
+    "JAVA",
+    "Spring Boot",
+    "Apache Kafka",
+    "PostgreSQL",
   ],
   projects: [
+    {
+      title: "Workflow App - BilgeAdam",
+      techStack: ["JAVA", "Spring Boot 3", "NextJs", "Apache Kafka", "PostgreSQL", "Redis Cache", "Mongo DB"],
+      description: "Internal workflow application for process management",
+    },
+    {
+      title: "HCM Portal NextJs - BilgeAdam",
+      techStack: ["C#", ".NET 8", "ReactJs", "NextJs"],
+      description: "I contributed to developing the frontend infrastructure during the migration of the HCM portal application to Next.js, focusing on performance optimization and scalability.",
+    },
+    {
+      title: "Kariyer GarantiBBVA - BilgeAdam",
+      techStack: ["C#", ".NET 8", ".NET MVC", "ReactJs"],
+      description: "Career application where users can apply to job adverts and manage the application process. I contributed to the development of new modules and pages.",
+      link: {
+        label: "Kariyer GarantiBBVA",
+        href: "https://kariyer.garantibbva.com.tr/",
+      },
+    },
+    {
+      title: "ArgeMAS Erp App - ArgeMAS",
+      techStack: ["C#", '.NET Framework', "Devexpress", "MSSQL", "TSQL"],
+      description: "Internal ERP Application. I participated in developing the MRP module for the ERP system.",
+    },
+    {
+      title: "Senguller Integration App - İvme Bilişim",
+      techStack: ["C#", ".NET 6", "Blazor", "EF Core", "MSSQL"],
+      description: "Web Api application that transfers data to the logo using background services and endpoints.",
+    },
+    {
+      title: "KACUV Integration Web API - İvme Bilişim",
+      techStack: ["C#", '.NET 3.1', '.NET MVC', "MSSQL", "TSQL"],
+      description: "Web Api application that transfers data to the logo using endpoints.",
+    },
+    {
+      title: "Job Tracking App - İvme Bilişim",
+      techStack: ["C#", '.NET 3.1', '.NET MVC', "MSSQL", "TSQL"],
+      description: "A web application that automatically converts emails into jobs, allowing users to manage, track, and generate reports for these jobs.",
+    },
+  ],
+  customProjects: [
+    {
+      title: "Turkuaz Integration App",
+      techStack: ["C#", ".NET", "NextJs","ABP Framework", "EF Core", "MSSQL", "OpenIdDict"],
+      description: "Web Api and UI application that transfers data between Logo and external web api using background services and endpoints.",
+    },
+    {
+      title: "Product Tracking App",
+      techStack: ["C#", ".NET", "Blazor", "SignalR", "EF Core", "MSSQL"],
+      description: "Web Api and UI application for product definition and tracking.",
+    }
+  ],
+  individualProjects: [
     {
       title: "Database Comparison",
       techStack: ["C#", ".NET", "Blazor", "MudBlazor", "Dapper"],
@@ -169,15 +217,6 @@ export const RESUME_DATA = {
         label: "github.com",
         href: "https://github.com/cihangll/EfCoreRelationships",
       },
-    },
-    {
-      title: "Kariyer GarantiBBVA",
-      techStack: ["C#", ".NET", "ReactJs"],
-      description: "Career Application",
-      link: {
-        label: "Kariyer GarantiBBVA",
-        href: "https://kariyer.garantibbva.com.tr/",
-      },
-    },
-  ],
+    }
+  ]
 } as const;
